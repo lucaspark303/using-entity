@@ -11,7 +11,9 @@ namespace LolEntityDatabase.Data
     public class Users
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Seq { get; set; }
+
         public string Email { get; set; }
         public string Name { get; set; }
         //public DateTime Created { get; set; }

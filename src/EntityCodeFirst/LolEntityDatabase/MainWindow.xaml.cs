@@ -33,19 +33,21 @@ namespace LolEntityDatabase
             string email = txtEmail.Text;
             string name = txtName.Text;
 
-            LolDbContext db = new LolDbContext();
 
+            LolDbContext Edc = new LolDbContext();
 
-            var user = new Users();
-            user.Seq = 1;
+            Users user = new Users();
+            //user.Seq = 1;
             user.Name = name;
             user.Email = email;
             //user.Created = DateTime.Now;
 
-            
-            
-            db.Users.Add(user);
-            db.SaveChanges();
+
+
+
+
+            Edc.Users.Add(user);
+            Edc.SaveChanges();
         }
     }
 }
