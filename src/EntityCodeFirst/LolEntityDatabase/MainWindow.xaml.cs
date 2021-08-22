@@ -45,7 +45,7 @@ namespace LolEntityDatabase
 
 
 
-
+                
             Edc.Users.Add(user);
             Edc.SaveChanges();
         }
